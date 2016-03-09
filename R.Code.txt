@@ -1,0 +1,31 @@
+> crime <-read.csv(file.choose(), header=T)
+
+> crime
+
+> crime<-sapply(crime, as.character)
+
+> row.names(crime) <- crime[,1]
+
+Str(crime)
+
+Summary(crime)
+
+> library(ggplot2)
+
+> library(maps)
+
+> plot(crime)
+
+> smoothScatter(crime$Population)
+
+> get_map
+
+> library(RCurl)
+
+>  plot(crime$Population, crime$Violent.crime, main="Scatterplot", xlab="crime$Population", ylab="crime$Violent.crime")
+
+plot(crime$Violent.crime)
+
+smoothScatter(crime$Violent.crime)
+
+smoothScatter(crime$Arson)
